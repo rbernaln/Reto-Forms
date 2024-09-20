@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1b1b1b; /* Fondo oscuro pero suave */
+  color: #e0e0e0; /* Texto claro pero no brillante */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.95); /* Fondo negro suave */
+  border: 1px solid #1f4e5f; /* Bordes azul-gris oscuro */
+  border-radius: 12px;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra más discreta */
+}
+
+h1 {
+  color: #c1a57b; /* Dorado apagado */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+input, select {
+  background-color: #2b2b2b; /* Fondo gris oscuro en inputs */
+  color: #e0e0e0; /* Texto claro pero no deslumbrante */
+  border: 1px solid #1f4e5f; /* Bordes azul-gris oscuro */
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #7d7d7d; /* Color gris para los placeholders */
+}
+
+select {
+  appearance: none; /* Elimina el estilo predeterminado del select */
+  padding-right: 30px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #8aa399; /* Azul grisáceo suave */
+}
+
+/* Estilo para inputs con error */
+.error-input {
+  border-color: #d76a6a !important; /* Rojo apagado */
+  box-shadow: 0 0 5px #d76a6a !important; /* Sombra roja suave */
+}
+
+/* Estilo para texto de error */
+.error-text {
+  color: #d76a6a !important; /* Rojo apagado */
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
+
+/* Botón de submit */
+.submit-button {
+  background-color: #395b64; /* Azul gris oscuro */
+  color: #e0e0e0; /* Texto claro */
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #52787a; /* Azul gris más claro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efecto de sombra discreto */
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .app-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
